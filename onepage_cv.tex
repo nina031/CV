@@ -1,0 +1,30 @@
+\documentclass[11pt, a4paper]{awesome-cv}
+\geometry{left=1.8cm, top=1.5cm, right=1.8cm, bottom=1.8cm, footskip=.5cm} % Marges réduites
+
+\fontdir[fonts/]
+\colorlet{awesome}{awesome-skyblue}
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+% Informations personnelles
+\name{Manoel}{Da Ponte}
+\address{390 route de Saint Simon, Toulouse, France}
+\mobile{(+33) 6 82 69 71 32}
+\email{daponte.manoel@gmail.com}
+\homepage{manoel-daponte.com}
+\linkedin{manoel-daponte-4092ab139}
+\extrainfo{Permis B + véhicule}
+\position{Senior Full Stack Engineer}
+\quote{Spécialisé dans l'ingénierie de données et le développement full-stack, je conçois des solutions analytiques innovantes.}
+
+\makecvfooter{\today}{Manoel Da Ponte~~~·~~~Résumé}{1/1}
+
+\begin{document}
+
+\makecvheader
+
+% Inclure seulement les sections essentielles et réduire leur contenu
+\input{cv-sections/education.tex}
+\input{cv-sections/skills-onepage.tex} % Version condensée des compétences
+\input{cv-sections/experience-onepage.tex} % Version condensée de l'expérience
+
+\end{document}
