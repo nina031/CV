@@ -1,0 +1,44 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Awesome Resume/CV - One Page Version
+% XeLaTeX Template
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[11pt, a4paper]{awesome-cv}
+
+\geometry{left=1.8cm, top=1.5cm, right=1.8cm, bottom=1.8cm, footskip=.5cm} % Marges réduites
+
+\fontdir[fonts/]
+
+% Color for highlights
+\definecolor{myblue}{HTML}{0066CC} % Un bleu plus foncé et lisible
+\colorlet{awesome}{myblue}
+
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+%----------------------------------------------------------------------------------------
+%	PERSONAL INFORMATION
+%----------------------------------------------------------------------------------------
+
+\name{Manoel}{Da Ponte}
+\address{Toulouse, France}
+\mobile{(+33) 6 82 69 71 32}
+\email{daponte.manoel@gmail.com}
+\homepage{manoel-daponte.com}
+\linkedin{manoel-da-ponte-4092ab139}
+\extrainfo{Permis B + véhicule}
+\position{Senior Full Stack Engineer}
+\quote{Spécialisé dans l'ingénierie de données et le développement full-stack, je conçois des solutions analytiques innovantes et centrées utilisateur.}
+
+\makecvfooter{\today}{Manoel Da Ponte~~~·~~~Résumé}{1/1}
+
+\begin{document}
+
+\makecvheader
+
+% Version condensée pour tenir sur une page
+\input{cv-sections/profile-onepage.tex}
+\input{cv-sections/skills-onepage.tex}
+\input{cv-sections/experience-onepage.tex}
+\input{cv-sections/education-onepage.tex}
+
+\end{document}
