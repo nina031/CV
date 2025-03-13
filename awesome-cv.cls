@@ -82,6 +82,7 @@
 \RequirePackage{parskip}
 % Needed to deal hyperlink
 \RequirePackage[hidelinks,unicode]{hyperref}
+% \RequirePackage[colorlinks=true,linkcolor=awesome,urlcolor=awesome,unicode]{hyperref}
 \hypersetup{%
   pdftitle={},
   pdfauthor={},
@@ -619,17 +620,31 @@
 }
 
 % Define an environment for cvskill
+% \newenvironment{cvskills}{%
+%   \vspace{\acvSectionContentTopSkip}
+%   \vspace{-2.0mm}
+%   \begin{center}
+%     \setlength\tabcolsep{1ex}
+%     \setlength{\extrarowheight}{0pt}
+%     \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} r L{\textwidth * \real{0.9}}}
+% }{%
+%     \end{tabular*}
+%   \end{center}
+% }
+
 \newenvironment{cvskills}{%
   \vspace{\acvSectionContentTopSkip}
   \vspace{-2.0mm}
   \begin{center}
     \setlength\tabcolsep{1ex}
     \setlength{\extrarowheight}{0pt}
-    \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} r L{\textwidth * \real{0.9}}}
-}{%
+    % Ancienne ligne avec alignement à droite pour la première colonne
+    \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} L{5cm} L{\textwidth * \real{0.75}}}
+      }{%
     \end{tabular*}
   \end{center}
 }
+
 % Define a line of cv information(skill)
 % Usage: \cvskill{<type>}{<skillset>}
 \newcommand*{\cvskill}[2]{%

@@ -11,7 +11,9 @@
 \fontdir[fonts/]
 
 % Color for highlights
-\colorlet{awesome}{awesome-skyblue}
+% \colorlet{awesome}{awesome-skyblue}
+\definecolor{myblue}{HTML}{0066CC} % Un bleu plus foncé et lisible
+\colorlet{awesome}{myblue}
 
 \renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
 
@@ -28,7 +30,7 @@
 \linkedin{manoel-da-ponte-4092ab139}
 
 \position{Full Stack Engineer}
-\quote{Spécialisé dans l'ingénierie de données et le développement full-stack, je conçois des solutions analytiques innovantes avec une approche orientée résultats et business value.}
+\quote{Ingénieur full-stack et data scientist avec expérience internationale, je combine expertise technique et vision business pour développer des solutions analytiques innovantes. Capacité éprouvée à concevoir des applications end-to-end répondant précisément aux besoins métiers, avec une approche orientée résultats et une affinité pour les environnements dynamiques.}
 
 \makecvfooter{\today}{Manoel Da Ponte~~~·~~~Résumé}{\thepage}
 
@@ -43,11 +45,9 @@
 %	Each section is imported separately, open each file in turn to modify content
 %----------------------------------------------------------------------------------------
 
-\input{cv-sections/education.tex}
-\input{cv-sections/certification.tex}
 \input{cv-sections/skills.tex}
-\input{cv-sections/profile.tex}
 \input{cv-sections/experience.tex}
+\input{cv-sections/education.tex}
 \input{cv-sections/projects.tex}
 
 %----------------------------------------------------------------------------------------
