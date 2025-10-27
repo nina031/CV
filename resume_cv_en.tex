@@ -1,0 +1,54 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Awesome Resume/CV
+% XeLaTeX Template
+% Version 1.3 (30/3/2020)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[11pt, a4paper]{awesome-cv}
+
+\geometry{left=2cm, top=1.5cm, right=2cm, bottom=2cm, footskip=.5cm}
+
+\fontdir[fonts/]
+
+% Color for highlights
+% \colorlet{awesome}{awesome-skyblue}
+\definecolor{myblue}{HTML}{0066CC} % Un bleu plus foncé et lisible
+\colorlet{awesome}{myblue}
+
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+%----------------------------------------------------------------------------------------
+%	PERSONAL INFORMATION
+%----------------------------------------------------------------------------------------
+
+\name{Nina}{Messaoudi}
+\address{Route de Saint Simon, Toulouse, France}
+\mobile{(+33) 7 66 53 77 59}
+
+\email{messaoudinina55@gmail.com}
+\homepage{nina-messaoudi.com}
+\linkedin{nina-messaoudi}
+
+\position{Data Scientist \& AI Engineer}
+\quote{Specialized in data science and artificial intelligence, with over five years of experience in the field, I design and develop end-to-end solutions tailored to various business needs. Driven by a strong appetite for innovation, I have also created and deployed several SaaS applications integrating AI, combining technical rigor, product vision and the pursuit of concrete impact.}
+
+\makecvfooter{\today}{Nina Messaoudi~~~·~~~Resume}{\thepage}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+\makecvheader
+
+%----------------------------------------------------------------------------------------
+%	CV/RESUME CONTENT
+%	Each section is imported separately, open each file in turn to modify content
+%----------------------------------------------------------------------------------------
+
+\input{cv-sections-en/skills.tex}
+\input{cv-sections-en/experience.tex}
+\input{cv-sections-en/education.tex}
+\input{cv-sections-en/projects.tex}
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
